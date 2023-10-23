@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavander Farma - Farmácia Online 24h</title>
+    <link rel="icon" href="./img/icone.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/sobre.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/corpo.css">
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <a href="index.html"><img src="./img/logosemfundo.png" alt="Logo LP" class="img_logo_header"></a>
+        </div>
+        <div class="pesquisa">
+            <input type="text" class="busca" placeholder="Buscar...">
+            <img src="./img/lupa.png" alt="buscar" class="imgBusca">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="beleza.html">BELEZA</a>
+            <a href="medicamentos.html">MEDICAMENTOS</a>
+            <a href="promoções.html">PROMOÇÕES</a>
+            <div class="box-carrinho">
+                <div class="valor-carrinho">
+                    <a href="#"><button class="box-carrinho-button" type="submit"><img class="icon-carrinho" src="./img/carrinhodecompra.png" alt="carrinhodecompra"><h4>0/Cesta<br>R$ 0,00</h4></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div tabindex="0" class="content1" onfocus="closeSidebar()" id="content">
+        <div class="corpo">
+            <img src="./img/lavanda.jpg" class="banner-lavanda">
+            <div class="sobre">
+                <h2>Sobre a Lavander Farma</h2>
+                <p>
+                    Bem-vindo à Lavander Farma, sua farmácia de confiança para cuidados de saúde de qualidade e bem-estar. Nossa missão é proporcionar atendimento personalizado e serviços farmacêuticos de excelência para a comunidade local. 
+                </p>        
+                <p>
+                    Fundada em 1989, a Lavander Farma tem uma longa história de dedicação à saúde e ao conforto de nossos clientes. Desde então, crescemos e nos adaptamos às necessidades em constante evolução de nossa comunidade, mantendo sempre o compromisso com a excelência.
+                </p>
+                <h2>Nossa Equipe</h2>
+                <p>
+                    Nossa equipe é composta por farmacêuticos e profissionais de saúde altamente qualificados que estão dedicados a fornecer assistência e aconselhamento personalizado. Estamos aqui para responder a todas as suas perguntas sobre medicamentos, interações medicamentosas, efeitos colaterais e muito mais. Acreditamos que o aconselhamento farmacêutico é uma parte fundamental de um tratamento de saúde eficaz, e estamos empenhados em ajudá-lo a entender seus medicamentos e como utilizá-los da melhor maneira possível.
+                </p>    
+                <h2>Serviços Oferecidos</h2>
+                <p>
+                    Na Lavander Farma, oferecemos uma ampla gama de serviços para atender às suas necessidades de saúde e bem-estar, incluindo:
+                </p>
+                <ul>
+                    <li>Dispensação de medicamentos prescritos</li>
+                    <li>Serviços de administração de medicamentos</li>
+                    <li>Aconselhamento em saúde</li>
+                    <li>Verificação de pressão arterial</li>
+                    <li>Testes de glicemia</li>
+                    <li>Preparação de medicamentos personalizados</li>
+                    <li>Produtos de beleza e cuidados pessoais</li>
+                    <li>Produtos de cuidados infantis</li>
+                    <li>Suplementos vitamínicos e minerais</li>
+                    <li>Produtos para saúde bucal</li>
+                    <li>E muito mais</li>
+                </ul>
+                <h2>Compromisso com a Comunidade</h2>
+                <p>
+                    Estamos profundamente envolvidos com a nossa comunidade e acreditamos em dar de volta sempre que podemos. Participamos de eventos locais, campanhas de saúde pública e trabalhamos em parceria com organizações locais para promover a saúde e o bem-estar em nossa área.
+                </p>
+                <h2>Localização e Contato</h2>
+                <p>
+                    Nossa farmácia está convenientemente localizada em todo o território brasileiro, onde estamos prontos para atendê-lo. Você pode entrar em contato conosco pelo telefone +55 (13) 1313-1313 ou por e-mail em lavanderfarma@contato.com.
+                </p>
+                <h3>
+                    Obrigado por escolher a Lavander Farma como sua farmácia de confiança. Estamos ansiosos para atender a todas as suas necessidades de saúde e bem-estar. Seja bem-vindo à família Lavander Farma.
+                </h3>
+            </div>
+        </div>  
+
+
+        <footer>
+            <div class="footer">
+                <div class="contacts">
+                    <img src="./img/logosemfundo.png" class="img-logo-footer" alt="logo">
+                    <p>Cuidando da Sua Saúde</p>
+                    <div class="socialmedia">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blogs</h3>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="footer-link">Contato</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="footer-link">Sobre</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="beleza.html" class="footer-link">Beleza</a>
+                    </li>
+                    <li>
+                        <a href="medicamentos.html" class="footer-link">Medicamentos</a>
+                    </li>
+                    <li>
+                        <a href="promoções.html" class="footer-link">Promoções</a>
+                    </li>
+                </ul>
+                <div class="footer-subscribe">
+                    <h3>Inscreva-se</h3>
+                    <p>Faça sua inscrição para receber notificações sobre promoções!</p>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="seu@email.com">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &#169
+                2023 todos os direitos reservados
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    var header           = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content          = document.getElementById('content');
+    var showSidebar      = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+</script>
+</html>

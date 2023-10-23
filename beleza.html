@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/corpo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/produtos.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/banners.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/global.css">
+
+    <title>Lavander Farma - Farmácia Online 24h</title>
+    <link rel="icon" href="./img/icone.png">
+</head>
+<body id="body">
+    <header>
+        <div class="header" id="header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="logo_header">
+                <a href="index.html"><img src="./img/logosemfundo.png" alt="Logo LP" class="img_logo_header"></a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" class="busca" placeholder="Buscar...">
+                <img src="./img/lupa.png" alt="buscar" class="imgBusca">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <a href="beleza.html">BELEZA</a>
+                <a href="medicamentos.html">MEDICAMENTOS</a>
+                <a href="promoções.html">PROMOÇÕES</a>
+                <div class="box-carrinho">
+                    <div class="valor-carrinho">
+                        <a href="#"><button class="box-carrinho-button" type="submit"><img class="icon-carrinho" src="./img/carrinhodecompra.png" alt="carrinhodecompra"><h4>0/Cesta<br>R$ 0,00</h4></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div tabindex="0" class="content1" onfocus="closeSidebar()" id="content">
+        <section id="banners" class="galery">
+            <div class="banners">
+                <div class="slide">
+                    <input type="radio" name="radio" id="radio1">
+                    <input type="radio" name="radio" id="radio2">
+                    <input type="radio" name="radio" id="radio3">
+                    <input type="radio" name="radio" id="radio4">
+
+                    <div class="imgs first">
+                        <img src="./img/BANNERS/img1.jpg" alt="banner 1">
+                    </div>
+                    <div class="imgs">
+                        <img src="./img/BANNERS/img2.jpg" alt="banner 2">
+                    </div>
+                    <div class="imgs">
+                        <img src="./img/BANNERS/img3.jpg" alt="banner 3">
+                    </div>
+                    <div class="imgs">
+                        <img src="./img/BANNERS/img4.jpg" alt="banner 4">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                    </div>
+                </div>
+                
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(content > 4){
+                    counter = 1;
+                }
+            },5000);
+        </script>
+        <div class="corpo">
+            <h1>Cuidados com a Pele</h1>
+                <div class="galeria">
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/cetaphil-1-BEL.jpg" alt="Loção peles">
+                        <h3>Cetaphil</h3>
+                        <p>Loção Peles Secas 473ml</p>
+                        <h6>R$147,99</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/cetaphil-2-BEL.jpg" alt="creme facial">
+                        <h3>Cetaphil Healthy Renew</h3>
+                        <p>Creme Facial Noturno 50ml</p>
+                        <h6>R$249,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/cetaphil-3-BEL.jpg" alt="hidratante corporal">
+                        <h3>Cetaphil Optimal</h3>
+                        <p>Hidratante Corporal 237ml</p>
+                        <h6>R$119,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/dailus-1-BEL.jpg" alt="demaquilante">
+                        <h3>Dailus Água Micelar</h3>
+                        <p>Demaquilante 120ml</p>
+                        <h6>R$29,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/dailus-2-BEL.jpg" alt="demaquilante">
+                        <h3>Dailus Lenço Micelar</h3>
+                        <p>Demaquilante 25 lenços</p>
+                        <h6>R$19,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/dailus-3-BEL.jpg" alt="creme para mãos">
+                        <h3>Dailus Manuntenção</h3>
+                        <p>Creme Para Mãos 28g</p>
+                        <h6>R$14,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+                    
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/dailus-4-BEL.jpg" alt="sérum facial">
+                        <h3>Dailus Hydra Serum</h3>
+                        <p>Sérum Facial 30ml</p>
+                        <h6>R$79,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/PELE/dailus-5-BEL.jpg" alt="dailus">
+                        <h3>Dailus Feat. Mentos</h3>
+                        <p>Jelly Cleanser 175ml</p>
+                        <h6>R$47,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+                </div>
+
+            <h1>Cabelos</h1>
+                <div class="galeria">
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/tresemme-1-CAB.png" alt="Shampoo">
+                        <h3>TRESemmé Shampoo</h3>
+                        <p>Blindagem Antifrizz 400ml</p>
+                        <h6>R$19,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/tresemme-2-CAB.jpg" alt="Condicionador">
+                        <h3>TRESemmé Cond.</h3>
+                        <p>Blindagem Antifrizz 400ml</p>
+                        <h6>R$19,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/pantene-1-CAB.jpg" alt="máscara hidratantte">
+                        <h3>Pantene PRO-V</h3>
+                        <p>Máscara de Hidratante 270ml</p>
+                        <h6>R$29,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/loreal-1-CAB.jpg" alt="óleo cabelo">
+                        <h3>L'OREAL Elvive</h3>
+                        <p>Óleo Extraordinário 100ml</p>
+                        <h6>R$39,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/pantene-2-CAB.jpg" alt="kit Shampoo Condicionador">
+                        <h3>Pantene Liso Extremo</h3>
+                        <p>Shampoo e Condicionador</p>
+                        <h6>R$24,99</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/dove-1-CAB.jpg" alt="Shampoo e Condicionador Anticaspa">
+                        <h3>Dove Man+Care</h3>
+                        <p>Anticaspa 2 em 1 200ml</p>
+                        <h6>R$16,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+                    
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/dove-2-CAB.jpg" alt="Shampoo Anticaspa">
+                        <h3>Dove Man+Care</h3>
+                        <p>Shampoo Anticaspa 200ml</p>
+                        <h6>R$14,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/nylooks-1-CAB.jpg" alt="gel cabelo">
+                        <h3>Ny Looks</h3>
+                        <p>Mega Fixação Azul 240g</p>
+                        <h6>R$12,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/dove-3-CAB.jpg" alt="Shampoo">
+                        <h3>Dove Hidra Liso</h3>
+                        <p>Shampoo 200ml</p>
+                        <h6>R$21,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/salonline-1-CAB.jpg" alt="gel salonline">
+                        <h3>SalonLine Day After</h3>
+                        <p>Gel Líquido 320g</p>
+                        <h6>R$16,99</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/salonline-2-CAB.jpg" alt="creme para pentear">
+                        <h3>SalonLine Cachos</h3>
+                        <p>Creme para Pentear 500ml</p>
+                        <h6>R$14,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/BELEZA/CABELOS/salonline-3-CAB.jpg" alt="ativador de Cachos">
+                        <h3>SalonLine S.O.S Cachos</h3>
+                        <p>Ativador de Cachos 300ml</p>
+                        <h6>R$15,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+                </div>
+
+            <h1>Higiene Pessoal</h1>
+                <div class="galeria">
+                    <div class="content">
+                        <img src="./img/HIGIENE/jnj-HIG.jpg" alt="cotonetes">
+                        <h3>Cotonetes</h3>
+                        <p>Pote 150 Unidades</p>
+                        <h6>R$15,99</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/HIGIENE/dove-1-HIG.jpg" alt="sabonete dove">
+                        <h3>Dove Sabonete</h3>
+                        <p>Original 90g</p>
+                        <h6>R$2,49</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/HIGIENE/dove-2-HIG.jpg" alt="sabonete dove">
+                        <h3>Dove Sabonete</h3>
+                        <p>Delicious Care 90g</p>
+                        <h6>R$4,50</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+    
+                    <div class="content">
+                        <img src="./img/HIGIENE/listerine-1-HIG.jpg" alt="Enxaguante Bucal">
+                        <h3>Listerine Cool Mint</h3>
+                        <p>Enxaguante Bucal 500ml</p>
+                        <h6>R$13,99</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/HIGIENE/colgate-3-HIG.jpg" alt="Fio Dental">
+                        <h3>Colgate Fio Dental</h3>
+                        <p>50m</p>
+                        <h6>R$12,99</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/HIGIENE/colgate-4-HIG.jpg" alt="Kit viagem">
+                        <h3>Colgate Kit Viagem</h3>
+                        <p>3 itens</p>
+                        <h6>R$35,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+                    
+                    <div class="content">
+                        <img src="./img/HIGIENE/neve-1-HIG.jpg" alt="Lenços Umedecidos">
+                        <h3>Neve Seda</h3>
+                        <p>Lenços Umedecidos 40 uni</p>
+                        <h6>R$17,49</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+
+                    <div class="content">
+                        <img src="./img/HIGIENE/rexona-1-HIG.jpg" alt="Desodorante Antitranspirante">
+                        <h3>Rexona Powder Dry</h3>
+                        <p>Desodorante Antit. 150ml</p>
+                        <h6>R$15,90</h6>
+                        <ul>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star checked"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <a href="#"><button class="compra">Comprar</button></a>
+                    </div>
+                </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="contacts">
+                    <img src="./img/logosemfundo.png" class="img-logo-footer" alt="logo">
+                    <p>Cuidando da Sua Saúde</p>
+                    <div class="socialmedia">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blogs</h3>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="footer-link">Contato</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="footer-link">Sobre</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="beleza.html" class="footer-link">Beleza</a>
+                    </li>
+                    <li>
+                        <a href="medicamentos.html" class="footer-link">Medicamentos</a>
+                    </li>
+                    <li>
+                        <a href="promoções.html" class="footer-link">Promoções</a>
+                    </li>
+                </ul>
+                <div class="footer-subscribe">
+                    <h3>Inscreva-se</h3>
+                    <p>Faça sua inscrição para receber notificações sobre promoções!</p>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="seu@email.com">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &#169
+                2023 todos os direitos reservados
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    var header           = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content          = document.getElementById('content');
+    var showSidebar      = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+</script>
+</html>
