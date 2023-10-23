@@ -1,0 +1,63 @@
+.contato input{
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    background-color: white;
+    height: 25px;
+    width: 100%;
+    padding: 3px;
+}
+.contato textarea{
+    border: 1px solid darkslategrey;
+    padding: 3px;
+    border-radius: 5px;
+    height: 100%;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.contato img{
+    width: 1300px;
+    height: 370px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(134, 134, 134);
+}
+.contato p{
+    background-color: whitesmoke;
+}
+.conteudo p{
+   margin-top: -15px;
+   color: rgb(13, 33, 33);
+   font-size: 17px;
+   background-color: whitesmoke;
+}
+.conteudo h1{
+    background-color: whitesmoke;
+}
+.conteudo h3{
+    padding-bottom: 5px;
+}
+.conteudo{
+    margin: 10px;
+    padding: 10px;
+}
+.submit{
+    border: 1px solid darkslategrey;
+    border-radius: 0 0 20px 20px;
+    width: 500px;
+    height: 35px;
+    background-color: white;
+    cursor: pointer;
+}
+.borda{
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 20px 20px 0 0 ;
+    box-shadow: 0 0 5px rgb(134, 134, 134);
+    margin-top: -30px;
+}

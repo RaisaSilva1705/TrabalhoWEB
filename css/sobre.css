@@ -1,0 +1,58 @@
+.banner-lavanda{
+    width: 1300px;
+    height: 100%;
+    align-self: center;
+    margin-top: -40px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(134, 134, 134);
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    margin-left: 40px;
+    width: 800px;
+    background-color: white;
+    text-align: justify;
+    border-radius: 10px;
+    
+}
+.sobre h2{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 28px;
+    margin-top: 10px;
+}
+.sobre h3{
+    padding: 2px;
+    margin-top: 10px;
+    text-indent: 28px;
+}
+.sobre p{
+    padding: 2px;
+    text-indent: 40px;
+}
+.sobre li{
+    list-style: none;
+    padding-left: 35px;
+    padding-top: 2px;
+}
+
+@media screen and (max-width: 768px){
+    .banner-lavanda{
+        width: 640px;
+    }
+    .sobre{
+        width: 490px;
+        padding-left: -20px;
+    }
+}
+@media screen and (max-width: 426px){
+    .banner-lavanda{
+        width: 360px;
+    }
+    .sobre{
+        width: 320px;
+        margin-left: -80px;
+    }
+}
